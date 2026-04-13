@@ -59,9 +59,12 @@ void check(int permission, int temp, int rad, int hour){
     
     else if (permission==2)
     {
-        if((rad<=2)&&(hour<=8)&&(hour>=18)){
+        if((rad<=2)&&(hour>=8)&&(hour<=18)){
             printf("MASUK");
-        } else printf("PEMERIKSAAN");
+        }
+        else{   
+            printf("PEMERIKSAAN");
+        }
     }
     
     else if ((permission==3)&&(rad==0)&&(temp<380))
